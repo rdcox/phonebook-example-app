@@ -1,0 +1,28 @@
+{
+  "name": "phonebook-example-app",
+  "version": "1.0.0",
+  "description": "A series of practice exercises from University of Helsinki's Fullstack Open 2020 course.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdcox/phonebook-example-app.git"
+  },
+  "author": "Ryan Cox",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rdcox/phonebook-example-app/issues"
+  },
+  "homepage": "https://github.com/rdcox/phonebook-example-app#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
