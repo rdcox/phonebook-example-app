@@ -2,6 +2,7 @@
 const { request, response } = require('express')
 const express = require('express')
 const morgan = require('morgan')
+const cors = require('cors')
 
 morgan.token('reqStr', function getReqStr(req) {
     return JSON.stringify(req.body)
@@ -12,6 +13,7 @@ const app = express()
 // middleware
 app.use(express.json())
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms :reqStr'))
+app.use(cors())
 
 // hardcoded list of mock entries
 let entries = [
